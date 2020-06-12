@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <style>
+        #gameObj{
+            
+            width: 60px;
+            height:100px;
+            background-image: url('./obj.gif');
+            background-size: 100% 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameObj">
+
+
+    </div>
+
+     
+
+
+
+
+
+
+<script>
+    let obj=document.getElementById('gameObj');
+    let x=0;
+    let y=0;
+    this.addEventListener('keydown',function(event){
+
+     if(event.keyCode==68){
+         x+=5;
+         y+=0;
+         obj.style.transform=`translate(${x}px,${y}px)`;
+     
+     }
+     if(event.keyCode==65){
+         x-=5;
+         y-=0;
+         obj.style.transform=`translate(${x}px,${y}px)`;
+     }
+     if(event.keyCode==87){
+         x-=0;
+         y-=5;
+         obj.style.transform=`translate(${x}px,${y}px)`;
+     }
+     if(event.keyCode==83){
+         x-=0;
+         y+=5;
+         obj.style.transform=`translate(${x}px,${y}px)`;
+     }
+
+
+    });
+    
+    
+    
+
+    
+</script>
+
+
+
+
+
+
+</body>
+</html>
